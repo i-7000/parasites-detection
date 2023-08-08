@@ -1,0 +1,34 @@
+/* pages/home/home.wxss */
+.mod-text{
+  writing-mode: vertical-rl;
+}
+
+.mod-text text{
+  display:block;
+
+}
+
+
+.mod-text .poem-body{
+  /* text-decoration-line: 5px solid; */
+  text-decoration:underline;
+  text-decoration-color: rgb(176, 179, 179);
+  line-height:2.2rem;
+}
+.mod-text .poem-head{
+  line-height:3rem;
+}
+
+.btn {
+  background: #F09C20;
+  width: 50%;
+  color: #fff;
+  border-radius:58rpx;
+
+}
+.xc {
+  text-align: center;
+  color: #F09C20;
+  font-size: 18px;
+  margin-top: 1rem;
+}

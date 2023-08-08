@@ -1,0 +1,24 @@
+<!--pages/home/home.wxml-->
+<view class="Home">
+  <image src="/images/S_japonicum_egg_BAM2.jpg"></image>
+  <view class="mod-text">
+    <text class="poem-head">送瘟神</text>
+    <text> </text>
+    <text class="poem-body">天连五岭银锄落，</text>
+    <text class="poem-body">地动三河铁臂摇。</text>
+    <text class="poem-body">借问瘟君欲何往，</text>
+    <text class="poem-body">纸船明烛照天烧。</text>
+    <text> </text>
+    <text class="poem-head">毛泽东</text>
+  </view>
+</view>
+
+<view>
+  <view bindtap="EggDetect" class="xc" id="album">
+    <text>从相册选择></text>
+  </view>
+  <button bindtap="EggDetect" class="btn" id="camera" >
+    <i-icon color="#fff" size="28" type="camera_fill"></i-icon> 拍照识卵
+  </button>
+
+</view>
