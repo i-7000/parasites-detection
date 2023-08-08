@@ -35,7 +35,13 @@ Page({
               }
 
               //----------绘制图形并取出图片路径--------------
-              var ctx = wx.createCanvasContext('canvas')
+              var ctx = wx.createSelectorQuery()
+              .select('#canvas') // 在 WXML 中填入的 id
+              .node(({ node: canvas }) => {
+                  const context = canvas.getContext('2d')
+              })
+              .exec()
+              
               ctx.drawImage(res_1.path, 0, 0, canvasWidth, canvasHeight)
               ctx.draw(false, setTimeout(function() {
                   wx.canvasToTempFilePath({
